@@ -7,6 +7,8 @@ return [
     'blog' => 'Blog',
     'contact_us' => 'Contact',
     'services' => 'Services',
+    'faq' => 'FAQ',
+    'register' => 'Register',
     'certification_program' => 'Certification Program',
     'request_certification' => 'Request Certification',
     'certified_institutions' => 'Certified Intitutions',

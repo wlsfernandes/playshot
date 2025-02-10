@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-@section('title', '#somosAETH | Home')
+@section('title', '#somosPlayShot | Home')
 
 @section('meta-description', 'Discover comprehensive Hispanic theological education and Latino ministry training programs. Explore Bible institute certifications, leadership development, and theological resources for Hispanic pastors and church leaders. Empower your ministry with tailored courses and Spanish-language resources.')
 
-@section('meta-keywords', 'somosAETH,Hispanic theological education, Latino ministry training, Bible institute certification, Hispanic church leadership, theological resources for Hispanics, Hispanic ministry programs, Latino religious education, Hispanic theology courses, Spanish theological resources, Hispanic pastoral training, leadership development, Latino church leaders resources, certification for Hispanic Bible institutes,Preaching, Compelling, Teologia, Teologica, Educacion, Education, Servicio, Comunidad, Hispano, Latino, Predicacion, Transformacion, America Latina, Caribe, Educadores, Scholars, Autores, Historiadores, Teologia Integral, Teologia Sistematica, Migración, Justicia Social, Adiestramiento, Formacion, Antioquia, Reflexión, Recursos, Libros, Storytelling, Colaboracion, En Conjunto')
+@section('meta-keywords', 'somosPlayShot,Hispanic theological education, Latino ministry training, Bible institute certification, Hispanic church leadership, theological resources for Hispanics, Hispanic ministry programs, Latino religious education, Hispanic theology courses, Spanish theological resources, Hispanic pastoral training, leadership development, Latino church leaders resources, certification for Hispanic Bible institutes,Preaching, Compelling, Teologia, Teologica, Educacion, Education, Servicio, Comunidad, Hispano, Latino, Predicacion, Transformacion, America Latina, Caribe, Educadores, Scholars, Autores, Historiadores, Teologia Integral, Teologia Sistematica, Migración, Justicia Social, Adiestramiento, Formacion, Antioquia, Reflexión, Recursos, Libros, Storytelling, Colaboracion, En Conjunto')
 
 
 <!-- Content here -->
@@ -17,45 +17,49 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+
         </ol>
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="assets/images/gallery/Banner-Website-Impactando.jpg" alt="AETH">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/gallery/aeth_graduation.jpg" alt="AETH">
+                    <img class="d-block w-100" src="assets/images/gallery/banner1.jpg" alt="PlayShot">
                     <div class="auto-container"
-                        style="position: absolute; top: 70%; left: 50%; transform: translate(-50%, -50%); z-index: 2; text-align: center;">
+                        style="position: absolute; top: 30%; left: 40%; transform: translate(-50%, -50%); z-index: 2; text-align: center;">
                         <div class="content-box">
-                            <h1 style="font-size:48px;color:#fff"><b>@lang('header.complete_aeth_name')</b></h1>
-                            <h5 style="font-size:24px;color:#fff">@lang('header.education_p1')</h5>
+                            <h1 style="font-size:72px;color: #000000"><b>PlayShot</b></h1>
+                            <h5 style="font-size:32px;color: #000000">@lang('header.education_p1')</h5>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/gallery/excelence.jpg" alt="Second slide">
+                    <img class="d-block w-100" src="assets/images/gallery/banner2.jpg" alt="PlayShot">
                     <div class="auto-container"
-                        style="position: absolute; top: 70%; left: 50%; transform: translate(-50%, -50%); z-index: 2; text-align: center;">
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; text-align: center;">
                         <div class="content-box">
-                            <h1 style="font-size:48px;color:#4a235a"><b>@lang('header.aeth_values')</b></h1>
-                            <h5 style="font-size:24px;color:#4a235a">@lang('header.values_p1')</h5>
+                            <h1 style="font-size:48px;color:#000000"><b>@lang('header.complete_PlayShot_name')</b></h1>
+                            <h5 style="font-size:24px;color:#000000">@lang('header.education_p1')</h5>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/gallery/bookstore.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="assets/images/gallery/banner3.jpg" alt="Second slide">
                     <div class="auto-container"
-                        style="position: absolute; top: 75%; left: 50%; transform: translate(-50%, -50%); z-index: 2; text-align: center;">
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; text-align: center;">
                         <div class="content-box">
-                            <h1 style="font-size:48px;color:#4a235a"><b>@lang('header.bookstore')</b></h1>
-                            <h5 style="font-size:24px;color:#4a235a">@lang('header.bookstore_enjoy')</h5>
+                            <h1 style="font-size:48px;color:#000000"><b>@lang('header.PlayShot_values')</b></h1>
+                            <h5 style="font-size:24px;color:#000000">@lang('header.values_p1')</h5>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/gallery/advent2024.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="assets/images/gallery/banner4.jpg" alt="Second slide">
+                    <div class="auto-container"
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; text-align: center;">
+                        <div class="content-box">
+                            <h1 style="font-size:48px;color:#000000"><b>@lang('header.PlayShot_values')</b></h1>
+                            <h5 style="font-size:24px;color:#000000">@lang('header.values_p1')</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -82,7 +86,7 @@ height: 100%;
     </div>
     <div class="auto-container">
         <div class="content-box">
-            <h1>@lang('header.complete_aeth_name')</h1>
+            <h1>@lang('header.complete_PlayShot_name')</h1>
         </div>
     </div>
 </section> -->
@@ -90,7 +94,7 @@ height: 100%;
     <div class="pattern-layer"></div>
     <div class="auto-container">
         <div class="inner-box">
-            <!-- <img src="assets/images/bienal-log.png" alt="Biennal24"> -->
+            <!-- <img src="assets/images/bienal-log.png" alt="Biennal24">
             <a href="#">
                 <img src="assets/images/antioquia-logo.png" alt="Antioquia"></a>
 
@@ -101,7 +105,7 @@ height: 100%;
                 <img src="assets/images/predication-logo.png" alt="CompellingPreaching"></a>
 
             <a href="https://gonzalezcenter.org" target="blank"><img src="assets/images/jcg-logo.png"
-                    alt="González Center"></a>
+                    alt="González Center"></a> -->
         </div>
     </div>
 </section>
@@ -112,7 +116,7 @@ height: 100%;
             <div class="col-lg-6 col-md-12 col-sm-12 video-column">
                 <div class="video-content p_relative d_block mr_30">
                     <div class="video-inner centred"
-                        style="background-image: url(assets/images/gallery/aeth-idea.jpg);">
+                        style="background-image: url(assets/images/gallery/PlayShot-idea.jpg);">
                         <div class="video-btn">
                             <a href="https://vimeo.com/767301063" class="lightbox-image" data-caption=""><i
                                     class="fas fa-play" style="margin-top:25px;"></i></a>
@@ -144,7 +148,7 @@ height: 100%;
                     <div class="video-inner centred"
                         style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
                         <!-- Correct Vimeo Embed for Play Button -->
-                        <iframe src="https://player.vimeo.com/video/767301063?title=0&byline=0&portrait=0"
+                        <iframe src="https://player.vimeo.com/video/321932936?title=0&byline=0&portrait=0"
                             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0"
                             allow="autoplay; fullscreen" allowfullscreen>
                         </iframe>
@@ -176,7 +180,7 @@ height: 100%;
                     <div class="count-outer count-box">
                         <span class="count-text" data-speed="1500" data-stop="35">0</span>
                     </div>
-                    <h3>Years of <br />AETH</h3>
+                    <h3>Years of <br />PlayShot</h3>
                 </div>
             </div>
             <div class="funfact-block-one">
@@ -355,7 +359,7 @@ height: 100%;
                 </div>
                 <figure class="video" style="width:60%">
                     <video autoplay muted loop style="width: 100%;">
-                        <source src="assets/images/videos/somosAETH.mp4" type="video/mp4">
+                        <source src="assets/images/videos/somosPlayShot.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </figure>
@@ -407,7 +411,7 @@ height: 100%;
     <div class="auto-container">
         <div class="sec-title centred mb_50">
             <span class="sub-title">Features</span>
-            <h2>AETH Asociaciación xxxxxxxx <br />xxxxxxxxxxxxxxxxx xxxxxxxxxx</h2>
+            <h2>PlayShot Asociaciación xxxxxxxx <br />xxxxxxxxxxxxxxxxx xxxxxxxxxx</h2>
         </div>
         <div class="row clearfix">
             <div class="col-lg-4 col-md-6 col-sm-12 feature-block">
@@ -441,79 +445,7 @@ height: 100%;
     </div>
 </section>
 -->
-<section class="testimonial-section">
-    <div class="bg-layer">
-        <video autoplay muted loop playsinline id="background-video">
-            <source src="assets/images/videos/Testimonials.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="outer-container clearfix">
-        <div class="testimonial-content">
-            <div class="content-box">
-                <div class="sec-title light mb_50">
-                    <div class="sub-title">@lang('messages.testimonials')</div>
-                    <h1 style="color:#fff">@lang('messages.testimonial_title')</h1>
-                </div>
-                <div class="bxslider">
-                    <div class="slider-content">
-                        <div class="slider-pager">
-                            <ul class="thumb-box">
-                                <li>
-                                    <a class="active" data-slide-index="0" href="#">
-                                        <figure class="thumb thumb-1"><img src="assets/images/testimonials/thumbs/1.jpg"
-                                                alt=""></figure>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="testimonial-inner">
-                            <ul class="rating-box clearfix">
-                                <li><i class="icon-13"></i></li>
-                                <li><i class="icon-13"></i></li>
-                                <li><i class="icon-13"></i></li>
-                                <li><i class="icon-13"></i></li>
-                                <li><i class="icon-13"></i></li>
-                            </ul>
-                            <p><i>@lang('messages.testimonials_phrase1')</i></p>
-                            <div class="author-info">
-                                <h3>@lang('messages.testimonials_name1')</h3>
-                                <span class="designation">@lang('messages.testimonials_desc1')</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-content">
-                        <div class="slider-pager">
-                            <ul class="thumb-box">
-                                <li>
-                                    <a data-slide-index="1" href="#">
-                                        <figure class="thumb thumb-2"><img src="assets/images/testimonials/thumbs/2.jpg"
-                                                alt=""></figure>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="testimonial-inner">
-                            <ul class="rating-box clearfix">
-                                <li><i class="icon-13"></i></li>
-                                <li><i class="icon-13"></i></li>
-                                <li><i class="icon-13"></i></li>
-                                <li><i class="icon-13"></i></li>
-                                <li><i class="icon-14"></i></li>
-                            </ul>
-                            <p><i>@lang('messages.testimonials_phrase2')</i></p>
-                            <div class="author-info">
-                                <h3>@lang('messages.testimonials_name2')</h3>
-                                <span class="designation">@lang('messages.testimonials_desc2')</span>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 

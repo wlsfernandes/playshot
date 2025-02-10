@@ -7,6 +7,8 @@ return [
     'blog' => 'Blog',
     'contact_us' => 'Contato',
     'services' => 'Serviços',
+    'faq' => 'Ajuda',
+    'register' => 'Registre-se',
     'certification_program' => 'Programa de Certificação',
     'request_certification' => 'Solicitar Certificação',
     'certified_institutions' => 'Instituições Certificadas',

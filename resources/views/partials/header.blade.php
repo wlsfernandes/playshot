@@ -103,8 +103,8 @@
                     <div class="top-right">
                         <ul class="info">
                             <li>
-                                <a href="mailto:info@aeth.org" style="font-size: 12px;color:#4a235a">
-                                    info@aeth.org</a>
+                                <a href="mailto:info@playshot.com" style="font-size: 12px">
+                                    info@playshot.com</a>
                         </ul>
                     </div>
                 </div>
@@ -152,11 +152,6 @@
                                         <ul>
                                             <li><a href="{{ route('about_us') }}">@lang('header.about_us')</a></li>
                                             <li><a href="{{ route('our_team') }}">@lang('header.our_team')</a></li>
-                                            <li><a
-                                                    href="{{ route('open_positions') }}">@lang('header.open_positions')</a>
-                                            </li>
-                                            <li><a href="#">@lang('header.events')</a></li>
-                                            <li><a href="#">@lang('header.blog')</a></li>
                                             <li><a href="{{ route('testimonials') }}">@lang('messages.testimonials')</a>
                                             </li>
                                             <li><a href="{{ route('contact_us') }}">@lang('header.contact_us')</a></li>
@@ -164,28 +159,17 @@
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-title"
-                                            style="pointer-events: none;">@lang('header.services')</a>
+                                            style="pointer-events: none;">@lang('header.faq')</a>
                                         <ul>
-                                            <li><a href="#">@lang('header.certification_program')</a>
-                                            </li>
-
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-title"
-                                            style="pointer-events: none;">@lang('header.programs')</a>
-                                        <ul>
-                                            <li><a href="#">@lang('header.antioquia')</a></li>
+                                            <li><a href="#">@lang('header.faq')</a></li>
 
                                         </ul>
                                     </li>
 
-                                    <li class="current">
-                                        <a href="#">@lang('header.bookstore')</a>
-                                    </li>
-                                    <li class="current">
+
+                                    <li>
                                         <a href="{{ route('memberships') }}"><i class="bi bi-person"></i>
-                                            @lang('header.signup_member')</a>
+                                            @lang('header.register')</a>
                                     </li>
 
                                 </ul>
@@ -201,10 +185,17 @@
                             <a href="#"><i class="icon-23"></i></a>
                         </li>
 
-                        <a href="#" class="btn btn-primary"
-                            style="background: linear-gradient(to right,#4a235a, #a569bd, #e8daef); border-color: #4a235a; color: #fff;">
+                        <a href="#" class="btn btn-primary" style="
+        background: linear-gradient(to right, #ff6700, #ff3d00, #1a1a1a);
+        border-color: #ff3d00;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 8px;
+        transition: 0.3s ease;
+    ">
                             <i class="bi bi-box-arrow-in-right me-2"></i> Login
                         </a>
+
 
                         <!--   <li class="btn-box">
                             <button class="donate-box-btn theme-btn-one">
