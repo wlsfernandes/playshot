@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Listen for Xdebug",
+            "type": "php",
+            "request": "launch",
+            "port": 9003,
+            "runtimeArgs": [
+                "-S",
+                "127.0.0.1:7788",
+                "-t",
+                "/var/www/html/playshot/public"
+            ],
+            "pathMappings": {
+                "/var/www/html/playshot/public": "${workspaceFolder}/public"
+            }
+        }
+    ],
+}
