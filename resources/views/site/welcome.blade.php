@@ -1,181 +1,573 @@
-@extends('layouts.site')
+@extends('layouts.app')
+
+@section('title', '#somosAETH | Home')
+
+@section('meta-description', 'Discover comprehensive Hispanic theological education and Latino ministry training programs. Explore Bible institute certifications, leadership development, and theological resources for Hispanic pastors and church leaders. Empower your ministry with tailored courses and Spanish-language resources.')
+
+@section('meta-keywords', 'somosAETH,Hispanic theological education, Latino ministry training, Bible institute certification, Hispanic church leadership, theological resources for Hispanics, Hispanic ministry programs, Latino religious education, Hispanic theology courses, Spanish theological resources, Hispanic pastoral training, leadership development, Latino church leaders resources, certification for Hispanic Bible institutes,Preaching, Compelling, Teologia, Teologica, Educacion, Education, Servicio, Comunidad, Hispano, Latino, Predicacion, Transformacion, America Latina, Caribe, Educadores, Scholars, Autores, Historiadores, Teologia Integral, Teologia Sistematica, Migración, Justicia Social, Adiestramiento, Formacion, Antioquia, Reflexión, Recursos, Libros, Storytelling, Colaboracion, En Conjunto')
 
 
-@section('content') 
+<!-- Content here -->
 
+@section('content')
 <section>
-    <div class="banner-area bg-relative banner-area-1 banner-area-2"
-        style="background-image: url('./assets/site/img/banner-2/1.png');">
-        <img class="banner-shape" src="assets/site/img/banner-2/2.png" alt="img">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h6 class="mb-3">Click Learn Thrive</h6>
-                    <h2 class="text-white tt-capetal mb-4">AmidLearning®</h2>
-                    <p class="text-white mb-4 pb-3"> é uma plataforma educacional que possibilita a interação entre o
-                        aluno(a), conteúdos e professor(a). Os cursos, aqui oferecidos, são de propriedade das entidades
-                        que usam a plataforma.</p>
-                    <a class="btn btn-yellow" href="contact">Contato</a>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/images/gallery/Banner-Website-Impactando.jpg" alt="AETH">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/gallery/aeth_graduation.jpg" alt="AETH">
+                    <div class="auto-container"
+                        style="position: absolute; top: 70%; left: 50%; transform: translate(-50%, -50%); z-index: 2; text-align: center;">
+                        <div class="content-box">
+                            <h1 style="font-size:48px;color:#fff"><b>@lang('header.complete_aeth_name')</b></h1>
+                            <h5 style="font-size:24px;color:#fff">@lang('header.education_p1')</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/gallery/excelence.jpg" alt="Second slide">
+                    <div class="auto-container"
+                        style="position: absolute; top: 70%; left: 50%; transform: translate(-50%, -50%); z-index: 2; text-align: center;">
+                        <div class="content-box">
+                            <h1 style="font-size:48px;color:#4a235a"><b>@lang('header.aeth_values')</b></h1>
+                            <h5 style="font-size:24px;color:#4a235a">@lang('header.values_p1')</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/gallery/bookstore.jpg" alt="Third slide">
+                    <div class="auto-container"
+                        style="position: absolute; top: 75%; left: 50%; transform: translate(-50%, -50%); z-index: 2; text-align: center;">
+                        <div class="content-box">
+                            <h1 style="font-size:48px;color:#4a235a"><b>@lang('header.bookstore')</b></h1>
+                            <h5 style="font-size:24px;color:#4a235a">@lang('header.bookstore_enjoy')</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/gallery/advent2024.jpg" alt="Third slide">
                 </div>
             </div>
         </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 </section>
-<section>
-    <div class="banner-area bg-relative banner-area-1" style="background-image: url('./assets/img/banner/0.png');">
-        <div class="container">
-            <div class="banner-1-top">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <h2>Expanda seus horizontes através da <span>Educação Teológica</span></h2>
-                    </div>
-                    <div class="col-lg-4 align-self-center">
-                        <div class="ps-xl-5">
-                            <a class="btn btn-border-base-2" href="contact">Contato</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="bg-gray border-radius-20 p-4 b-left-count">
-                        <img class="border-radius-20 mb-4 w-100" src="assets/site/img/banner/1.png" alt="img">
-                        <div class="bg-white border-radius-20 p-4">
-                            <div class="row">
-                                <div class="col-6 border-right-1 text-center">
-                                    <h3>35</h3>
-                                    <p>Módulos</p>
-                                    <img src="assets/site/img/banner/4.png" alt="img">
-                                </div>
-                                <div class="col-6 text-center">
-                                    <h3>840</h3>
-                                    <p>Cursos</p>
-                                    <img src="assets/site/img/banner/5.png" alt="img">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 order-xl-3">
-                    <div class="banner-count-area text-center bg-white box-shadow p-4 border-radius-20">
-                        <h4 class="mb-1">Teologia Sistemática</h4>
-                        <p class="mb-3">Aprendendo a viver em fé</p>
-                        <div class="banner-count">
-                            <span class="donate-piechart tran3s">
-                                <span class="bannerpiechart" data-border-color="#FB563A" data-value=".75">
-                                    <span class="chart_counter">75%</span>
-                                </span>
-                            </span>
-                        </div>
-                        <p class="mb-0 mt-2"> </p>
-                        <a class="btn btn-yellow border-radius-60 w-100 mt-3" href="#">Conhecimento</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 order-xl-2 mt-lg-0 mt-5">
-                    <div class="main-thumb">
-                        <img class="border-radius-20 w-100" src="assets/site/img/banner/2-new.png" alt="img">
-                        <img class="icon-img" src="assets/site/img/banner/3.png" alt="img">
-                    </div>
-                </div>
-            </div>
+<!--<section class="page-title centred">
+    <div class="bg-layer">
+        <video autoplay muted loop playsinline id="background-video" style=" position: absolute;top: 0;left: 0;width: 100%;
+height: 100%;
+    object-fit: cover; /* Ensures the video covers the container while maintaining aspect ratio */
+    z-index: -1; /* Keeps the video behind other content, if necessary */">
+            <source src="assets/images/videos/intro-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="auto-container">
+        <div class="content-box">
+            <h1>@lang('header.complete_aeth_name')</h1>
+        </div>
+    </div>
+</section> -->
+<section class="cta-style-two">
+    <div class="pattern-layer"></div>
+    <div class="auto-container">
+        <div class="inner-box">
+            <!-- <img src="assets/images/bienal-log.png" alt="Biennal24"> -->
+            <a href="#">
+                <img src="assets/images/antioquia-logo.png" alt="Antioquia"></a>
+
+            <a href="#">
+                <img src="assets/images/cp_logo_white_transparent.png" alt="Capacity Building"></a>
+
+            <a href="#">
+                <img src="assets/images/predication-logo.png" alt="CompellingPreaching"></a>
+
+            <a href="https://gonzalezcenter.org" target="blank"><img src="assets/images/jcg-logo.png"
+                    alt="González Center"></a>
         </div>
     </div>
 </section>
-<!-- <section>
-    <div class="about-area position-relative" style="margin-top:75px;">
-        <img class="position_animate_img top_image_bounce position-top-right" src="assets/img/shape/4.png" alt="img">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-7 col-lg-10 pe-xl-5">
-                    <div class="about-thumb-inner mb-4 mb-lg-0">
-                        <img src="assets/site/img/home-4/5.png" alt="img">
+<!--
+<section class="faq-style-two sec-pad">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-6 col-md-12 col-sm-12 video-column">
+                <div class="video-content p_relative d_block mr_30">
+                    <div class="video-inner centred"
+                        style="background-image: url(assets/images/gallery/aeth-idea.jpg);">
+                        <div class="video-btn">
+                            <a href="https://vimeo.com/767301063" class="lightbox-image" data-caption=""><i
+                                    class="fas fa-play" style="margin-top:25px;"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-5 align-self-center">
-                    <div class="section-title mt-5 mt-xl-0 mb-0">
-                        <h2 class="title">Seja um <br> Provedor de <span>Recursos</span></h2>
-                        <p class="content mb-0">Você pode ser um provedor de cursos usando a plataforma da AmidLearning
-                            utilizando-se da mais moderna tecnologia.</p>
-                        <a class="btn btn-base border-radius-40 mt-4" href="#">Provedor de Recursos</a>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 image-column" style="margin-top:100px;">
+                <div class="content_block_two">
+                    <div class="content-box ml_40">
+                        <div class="sec-title mb_55">
+                            <h2>@lang('messages.what_we_do')</h2>
+                        </div>
+                        <div class="text mb_40">
+                            <p>@lang('messages.what_we_do_p1')</p>
+                            <p>@lang('messages.what_we_do_p2')</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section> -->
-<section>
-    <div class="offer-area position-relative" style="margin-top:75px;">
-        <img class="position_animate_img top_image_bounce position-top-right" src="assets/site/img/shape/4.png"
-            alt="img">
-        <div class="container">
-            <div class="offer-inner text-center pd-top-120 pd-bottom-120 border-radius-10 bg-overlay-yellow overflow-hidden"
-                style="background-image: url('./assets/site/img/about/15.jpg');">
-                <div class="row justify-content-center">
-                    <div class="col-xl-7 col-lg-8 z-index-2">
-                        <h2 class="text-white">50% de desconto para novos alunos</h2>
-                        <p class="text-white px-xl-5 mb-lg-5 mb-4 mt-3 fw-500">Garanta já sua vaga com <b>50% de
-                                desconto</b> exclusivo para novos alunos! Não perca essa oportunidade!"</p>
-                        <a class="btn btn-white border-radius-40" href="register">Cadastre-se já</a>
+<section class="faq-style-two sec-pad">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-6 col-md-12 col-sm-12 video-column">
+                <div class="video-content p_relative d_block mr_30">
+                    <div class="video-inner centred"
+                        style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                        <!-- Correct Vimeo Embed for Play Button -->
+                        <iframe src="https://player.vimeo.com/video/767301063?title=0&byline=0&portrait=0"
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0"
+                            allow="autoplay; fullscreen" allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<section>
-<div class="faq-area bg-cover pd-top-90">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 pe-xl-5">
-                    <div class="about-thumb-inner pt-lg-3">
-                        <img class="main-img" src="assets/site/img/about/4.png" alt="img">
+            <div class="col-lg-6 col-md-12 col-sm-12 image-column" style="margin-top:100px;">
+                <div class="content_block_two">
+                    <div class="content-box ml_40">
+                        <div class="sec-title mb_55">
+                            <h2>@lang('messages.what_we_do')</h2>
+                        </div>
+                        <div class="text mb_40">
+                            <p>@lang('messages.what_we_do_p1')</p>
+                            <p>@lang('messages.what_we_do_p2')</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6 align-self-center ps-lg-5">
-                    <div class="section-title mb-0 mt-4 mt-lg-0">
-                        <h6 class="sub-title">Amid Learning</h6>
-                        <h2 class="title">Consultoria Educational</h2>
-                        <p class="content mb-0">Consultoria Educacional é o trabalho oferecido pelo AmidLearning®, cuja finalidade é introduzir os provedores de cursos aos conceitos educacionais que podem ser usados para a criação de cursos na plataforma. Esses conceitos, expressam a filosofia de ensino/aprendizagem dentro da qual a plataforma foi concebida. O uso eficiente das varias ferramentas da plataforma, dependem de uma percepção clara de como criair e usar um curso online.</p>
-                        <p class="content mb-0">A consultoria oferecida pelo AmidLearning® pode ser feita via web ou através do envio de um consultor até o site do provedor. Para maiores informações, contate o departamento educacional do AmidLearning® pelo email iguacufall@yahoo.com</p>
-                    </div>
-                    <ul class="p-0 m-0 single-check-inner mt-4 pt-2">
-                        <li>
-                            <img src="assets/site/img/about/5.png" alt="img">
-                          Modalidades: Online ou Presencial
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section>
-<div class="faq-area bg-cover pd-top-90">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-lg-6 align-self-center ps-lg-5">
-                    <div class="section-title mb-0 mt-4 mt-lg-0">
-                        <h6 class="sub-title">Amid Learning</h6>
-                        <h2 class="title">Treinamento Técnico</h2>
-                        <p class="content mb-0">Treinamento Técnico e o trabalho de apoio oferecido pelo AmidLearning® aos provedores de cursos, com a finalidade de capacitá-los para o uso eficiente da plataforma. Esse treinamento relaciona-se com as necessidades do processo de tratamento eletronico dos materiais a serem inseridos na plataforma. A falta de entendimento desse processo causará baixa eficiencia, tanto educacional como funcional, dos cursos oferecidos.</p>
-                        <p class="content mb-0">O treinamento técnico e oferecido via web e também através do envio de pessoal ao site do provedor. Contatos para maiores informações podem ser feitos através do endereço iguacufall@yahoo.com</p>
+<!--<section class="funfact-section alternat-2 pt_80 pb_80 bg-color-1">
+    <div class="auto-container">
+        <div class="inner-container">
+            <div class="funfact-block-one">
+                <div class="inner-box">
+                    <div class="count-outer count-box">
+                        <span class="count-text" data-speed="1500" data-stop="35">0</span>
                     </div>
-                    <ul class="p-0 m-0 single-check-inner mt-4 pt-2">
-                        <li>
-                            <img src="assets/site/img/about/5.png" alt="img">
-                          Capacitação Técnica 
-                        </li>
-                    </ul>
+                    <h3>Years of <br />AETH</h3>
                 </div>
-                <div class="col-lg-6 pe-xl-5">
-                    <div class="about-thumb-inner pt-lg-3">
-                        <img class="main-img" src="assets/site/img/about/caroline.png" alt="img">
+            </div>
+            <div class="funfact-block-one">
+                <div class="inner-box">
+                    <div class="count-outer count-box">
+                        <span class="count-text" data-speed="1500" data-stop="3">0</span><span>k</span>
+                    </div>
+                    <h3>Happy <br />Volunteers</h3>
+                </div>
+            </div>
+            <div class="funfact-block-one">
+                <div class="inner-box">
+                    <div class="count-outer count-box">
+                        <span class="count-text" data-speed="1500" data-stop="8">0</span><span>k</span>
+                    </div>
+                    <h3>Total <br />Monthly Doners</h3>
+                </div>
+            </div>
+            <div class="funfact-block-one">
+                <div class="inner-box">
+                    <div class="count-outer count-box">
+                        <span class="count-text" data-speed="1500" data-stop="10">0</span><span>k</span>
+                    </div>
+                    <h3>Total <br />Campaigns</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!--------------- partials.post --------------------------->
+
+
+
+<section class="cta-style-two" style="margin-top:48px;">
+    <div class="pattern-layer"></div>
+    <div class="auto-container">
+        <div class="inner-box">
+            <h1 style="color:#fff"><img src="assets/images/logo-3.png" alt="">@lang('messages.program_resources')</h1>
+        </div>
+    </div>
+</section>
+
+<section class="cause-section sec-pad">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-3 col-md-6 col-sm-12 cause-block"
+                style="min-height: 300px;display: flex;flex-direction: column;justify-content: space-between;">
+                <div class="cause-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="video">
+                                <a href="https://gonzalezcenter.org" target="blank">
+                                    <video width="100%" height="auto" autoplay muted loop>
+                                        <source src="assets/images/videos/gonzalezvideo.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </a>
+                            </figure>
+                            <div class="category"><a href="https://gonzalezcenter.org"
+                                    target="blank">@lang('messages.resource_center')</a></div>
+                        </div>
+                        <div class="lower-content">
+                            <div class="text">
+                                <p>@lang('programs.gonzalez.explore')</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 cause-block"
+                style="min-height: 300px;display: flex;flex-direction: column;justify-content: space-between;">
+                <div class="cause-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="video">
+                                <a href="#" target="blank">
+                                    <video width="100%" height="auto" autoplay muted loop>
+                                        <source src="assets/images/videos/preaching.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </a>
+                            </figure>
+                            <div class="category"><a href="#" target="blank">@lang('messages.preaching')</a></div>
+                        </div>
+                        <div class="lower-content">
+                            <div class="text">
+                                <p>@lang('programs.compelling.p19')</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-12 cause-block"
+                style="min-height: 300px;display: flex;flex-direction: column;justify-content: space-between;">
+                <div class="cause-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="video">
+                                <a href="#">
+                                    <video width="100%" height="auto" autoplay muted loop>
+                                        <source src="assets/images/videos/certification.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </a>
+                            </figure>
+                            <div class="category"><a href="#">@lang('messages.certification')</a></div>
+                        </div>
+                        <div class="lower-content">
+                            <div class="text">
+                                <p>@lang('programs.certification.p1')</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New fourth block -->
+            <div class="col-lg-3 col-md-6 col-sm-12 cause-block"
+                style="min-height: 300px;display: flex;flex-direction: column;justify-content: space-between;">
+                <div class="cause-block-one wow fadeInUp animated" data-wow-delay="900ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="video">
+                                <a href="#">
+                                    <video width="100%" height="auto" autoplay muted loop>
+                                        <source src="assets/images/videos/bookstore-video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </a>
+                            </figure>
+                            <div class="category"><a href="#">@lang('messages.bookstore')</a></div>
+                        </div>
+                        <div class="lower-content">
+                            <div class="text">
+                                <p>@lang('messages.bookstore_p1')</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
+<!-- cause-section end -->
+
+<!--
+<section class="about-style-three sec-pad" style="background-color:#e8daef;>
+    <div class=" auto-container">
+    <div class="row align-items-center clearfix">
+        <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+            <div class="content_block_two">
+                <div class="content-box ml_40">
+
+                    <div class="text mb_40">
+                        <p>xxxxxxxxxxxxx</p>
+                        <p style="margin-top:15px;">xxxxxxxxxxxxxxxxxxxx</p>
+                        <div class="btn-box" style="margin-top:25px;">
+                            <a href="#" target="blank" class="theme-btn-one">
+                                xxxxxxxxxxxxxxxxx</a>
+                        </div>
+                        <p style="margin-top:25px;">
+                            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+            <div class="image-box mr_40">
+                <div class="image-shape" style="background-image: url(assets/images/shape/shape-1.png);">
+                </div>
+                <figure class="video" style="width:60%">
+                    <video autoplay muted loop style="width: 100%;">
+                        <source src="assets/images/videos/somosAETH.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </figure>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</section>
+
+
+
+<section class="about-style-two pt_120">
+    <div class="auto-container">
+        <div class="row align-items-center clearfix">
+            <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                <div class="image-box mr_40">
+                    <div class="image-shape" style="background-image: url(assets/images/shape/shape-1.png);"></div>
+                    <figure class="image"><img src="assets/images/gallery/puerto-rico.jpg" alt=""></figure>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                <div class="content_block_two">
+                    <div class="content-box ml_40">
+                        <div class="sec-title mb_60">
+                            <span class="sub-title">About Trusthand</span>
+                            <h2>Our Mission Is to Change The World</h2>
+                        </div>
+                        <div class="text mb_40">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis porttitor pulvinar
+                                faucibus a, nisi. Erat eget lectus diam tempor sed. Amet dui scelerisque vel habitant ut
+                                eget tincidunt facilisis pretium. Porttitor mi nisi, non vitae tempus vel nec habitant
+                                tristique. Aliquet dignissim venenatis pellentesque ultricies posuere id pharetra.</p>
+                            <p>Nisi vel morbi purus habitasse vitae praesent phaselus viverra Suspendise diam, amet,
+                                natoque neque non tempor ullamcorper aenean turpis dolor malesuada sit scelerisque elit
+                                vitae.</p>
+                        </div>
+                        <div class="btn-box">
+                            <a href="about.html" class="theme-btn-one">More About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="feature-section p_relative sec-pad centred">
+    <div class="auto-container">
+        <div class="sec-title centred mb_50">
+            <span class="sub-title">Features</span>
+            <h2>AETH Asociaciación xxxxxxxx <br />xxxxxxxxxxxxxxxxx xxxxxxxxxx</h2>
+        </div>
+        <div class="row clearfix">
+            <div class="col-lg-4 col-md-6 col-sm-12 feature-block">
+                <div class="feature-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="icon-box"><img src="assets/images/icons/icon-1.png" alt=""></div>
+                        <h3><a href="index.html">Become A Volunteer</a></h3>
+                        <p>Amet minim mollit no deserunt ulamco sit enim aliqua dolor sint Velit officia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 feature-block">
+                <div class="feature-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="icon-box"><img src="assets/images/icons/icon-2.png" alt=""></div>
+                        <h3><a href="index.html">Send Us Donations</a></h3>
+                        <p>Amet minim mollit no deserunt ulamco sit enim aliqua dolor sint Velit officia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 feature-block">
+                <div class="feature-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="icon-box"><img src="assets/images/icons/icon-3.png" alt=""></div>
+                        <h3><a href="index.html">Get Support Directly</a></h3>
+                        <p>Amet minim mollit no deserunt ulamco sit enim aliqua dolor sint Velit officia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+<section class="testimonial-section">
+    <div class="bg-layer">
+        <video autoplay muted loop playsinline id="background-video">
+            <source src="assets/images/videos/Testimonials.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="outer-container clearfix">
+        <div class="testimonial-content">
+            <div class="content-box">
+                <div class="sec-title light mb_50">
+                    <div class="sub-title">@lang('messages.testimonials')</div>
+                    <h1 style="color:#fff">@lang('messages.testimonial_title')</h1>
+                </div>
+                <div class="bxslider">
+                    <div class="slider-content">
+                        <div class="slider-pager">
+                            <ul class="thumb-box">
+                                <li>
+                                    <a class="active" data-slide-index="0" href="#">
+                                        <figure class="thumb thumb-1"><img src="assets/images/testimonials/thumbs/1.jpg"
+                                                alt=""></figure>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="testimonial-inner">
+                            <ul class="rating-box clearfix">
+                                <li><i class="icon-13"></i></li>
+                                <li><i class="icon-13"></i></li>
+                                <li><i class="icon-13"></i></li>
+                                <li><i class="icon-13"></i></li>
+                                <li><i class="icon-13"></i></li>
+                            </ul>
+                            <p><i>@lang('messages.testimonials_phrase1')</i></p>
+                            <div class="author-info">
+                                <h3>@lang('messages.testimonials_name1')</h3>
+                                <span class="designation">@lang('messages.testimonials_desc1')</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-content">
+                        <div class="slider-pager">
+                            <ul class="thumb-box">
+                                <li>
+                                    <a data-slide-index="1" href="#">
+                                        <figure class="thumb thumb-2"><img src="assets/images/testimonials/thumbs/2.jpg"
+                                                alt=""></figure>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="testimonial-inner">
+                            <ul class="rating-box clearfix">
+                                <li><i class="icon-13"></i></li>
+                                <li><i class="icon-13"></i></li>
+                                <li><i class="icon-13"></i></li>
+                                <li><i class="icon-13"></i></li>
+                                <li><i class="icon-14"></i></li>
+                            </ul>
+                            <p><i>@lang('messages.testimonials_phrase2')</i></p>
+                            <div class="author-info">
+                                <h3>@lang('messages.testimonials_name2')</h3>
+                                <span class="designation">@lang('messages.testimonials_desc2')</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+@include('partials.contact')
+
+<!-- clients-section -->
+<section class="clients-section" style="background:#f7f5f1">
+    <div class="sec-title centred mb_55">
+        <span class="sub-title calendar">@lang('messages.important_partners')</span>
+    </div>
+    <div class="auto-container">
+        <div class="five-item-carousel owl-carousel owl-theme owl-nav-none owl-dots-none">
+            <figure class="clients-logo"><a href="https://candler.emory.edu/" target="blank"><img
+                        src="assets/images/clients/clients-2.png" alt=""></a>
+            </figure>
+            <figure class="clients-logo"><a href="https://www.garrett.edu/" target="blank"><img
+                        src="assets/images/clients/clients-3.png" alt=""></a>
+            </figure>
+            <figure class="clients-logo"><a href="https://cbf.net/" target="blank"><img
+                        src="assets/images/clients/clients-4.png" alt=""></a>
+            </figure>
+            <figure class="clients-logo"><a href="https://lillyendowment.org/" target="blank"><img
+                        src="assets/images/clients/clients-5.png" alt=""></a>
+            </figure>
+            <figure class="clients-logo"><a href="https://www.ats.edu/" target="blank"><img
+                        src="assets/images/clients/ats-logo.png" alt=""></a>
+            </figure>
+            <figure class="clients-logo" style="width:150px;"><a href="https://hti.ptsem.edu/" target="blank"><img
+                        src="assets/images/clients/client-6.png" alt=""></a>
+            </figure>
+            <figure class="clients-logo" style="width:150px;"><a href="https://hispanicscholarsprogram.org/"
+                    target="blank"><img src="assets/images/clients/clients-7.svg" alt=""></a>
+            </figure>
+            <figure class="clients-logo" style="width:150px;"><a href="https://www.intrust.org/" target="blank"><img
+                        src="assets/images/clients/clients-8.png" alt=""></a>
+            </figure>
+            <figure class="clients-logo" style="width:150px;"><a href="https://www.inter.edu/en/" target="blank"><img
+                        src="assets/images/clients/clients-9.png" alt=""></a>
+            </figure>
+            <figure class="clients-logo" style="width:150px;"><a href="https://www.wabash.edu/" target="blank"><img
+                        src="assets/images/clients/clients-10.png" alt=""></a>
+            </figure>
+            <figure class="clients-logo" style="width:150px;"><a href="https://tertuhablemos.com/" target="blank"><img
+                        src="assets/images/clients/clients-11.webp"></a>
+            </figure>
+            <figure class="clients-logo" style="width:150px;"><a
+                    href="https://www.worldvision.org/country/latin-america-caribbean" target="blank"><img
+                        src="assets/images/clients/clients-12.svg" alt=""></a>
+            </figure>
+            <figure class="clients-logo"><a href="https://se-pr.edu/" target="blank"><img
+                        src="assets/images/clients/clients-13.png" alt=""></a>
+            </figure>
+        </div>
+    </div>
+</section>
+<!-- clients-section end -->
 @endsection
