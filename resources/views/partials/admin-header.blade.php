@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>#somosAETH</title>
+    <title>#somosPlayShot</title>
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
@@ -45,7 +45,7 @@
             <div class="popup-inner">
                 <div class="upper-box clearfix">
                     <figure class="logo-box pull-left"><a href="index.php"><img
-                                src="{{ asset('assets/images/aeth-logo.png') }}" alt="AETH Logo">
+                                src="{{ asset('assets/images/aeth-logo.png') }}" alt="PlayShot Logo">
                         </a>
                     </figure>
                     <div class="close-search pull-right"><span class="far fa-times"></span></div>
@@ -117,7 +117,7 @@
                 <div class="outer-box">
                     <div class="logo-box">
                         <figure class="logo"> <a href="{{ url('/') }}"><img
-                                    src="{{ asset('assets/images/aeth-logo.png') }}" alt="AETH Logo">
+                                    src="{{ asset('assets/images/aeth-logo.png') }}" alt="PlayShot Logo">
                         </figure>
                     </div>
                     <div class="menu-area clearfix">
@@ -154,7 +154,7 @@
                                         style="display: flex; align-items: center; margin-right: 15px;">
                                         <a href="{{ route('certification') }}"
                                             style="font-size: 14px; display: flex; align-items: center;">
-                                            <i class="bi bi-award" style="font-size: 25px;"></i> AETH Certification
+                                            <i class="bi bi-award" style="font-size: 25px;"></i> PlayShot Certification
                                         </a>
                                     </li>
                                     <li class="cart-box" style="display: flex; align-items: center;">

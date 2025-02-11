@@ -5,6 +5,7 @@ use App\Models\Payment;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\PaypalController;
 use App\Http\Controllers\PaymentController;
 use Illuminate\Support\Facades\Storage;
@@ -63,25 +64,21 @@ Auth::routes();
 
 Route::middleware(['auth', 'institution.scope'])->group(function () {
 
-    // ADMIN
+
     Route::middleware('can:access-admin')->group(function () {
 
-        // Teachers
-        /*
-        Route::get('/teachers', [TeacherController::class, 'index'])->name('teachers.index');
-        Route::get('/teachers/create', [TeacherController::class, 'create'])->name('teachers.create');
-        Route::post('/teachers', [TeacherController::class, 'store'])->name('teachers.store');
-        Route::get('/teachers/{id}', [TeacherController::class, 'show'])->name('teachers.show');
-        Route::get('/teachers/{id}/edit', [TeacherController::class, 'edit'])->name('teachers.edit');
-        Route::put('/teachers/{id}', [TeacherController::class, 'update'])->name('teachers.update');
-        Route::delete('/teachers/{id}', [TeacherController::class, 'destroy'])->name('teachers.destroy');
-        */
-        // Students
+        Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+        Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create');
+        Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
+        Route::get('/posts/{id}', [PostController::class, 'show'])->name('posts.show');
+        Route::get('/posts/{id}/edit', [PostController::class, 'edit'])->name('posts.edit');
+        Route::put('/posts/{id}', [PostController::class, 'update'])->name('posts.update');
+        Route::delete('/posts/{id}', [PostController::class, 'destroy'])->name('posts.destroy');
 
 
         Route::get('/payments', [PaymentController::class, 'index'])->name('payments.index');
     });
-    // Student access
+
 
     // Paypall
     Route::get('paypal/payment/{id}', [PayPalController::class, 'createPayment'])->name('paypal.payment');

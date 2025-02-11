@@ -20,7 +20,7 @@
     <div class="auto-container">
         <div class="footer-top">
             <figure class="footer-logo"><a href="index.php"><img src="{{ asset('assets/images/logo-3.png') }}"
-                        alt="AETH Logo"></a></figure>
+                        alt="PlayShot Logo"></a></figure>
             <ul class="social-links">
                 <li><a href="http://www.facebook.com/groups/somosaeth/" target="blank"><i
                             class="fab fa-facebook-f"></i></a></li>

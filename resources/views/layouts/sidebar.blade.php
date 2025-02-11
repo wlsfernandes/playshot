@@ -5,19 +5,19 @@
     <div class="navbar-brand-box">
         <a href="{{url('index')}}" class="logo logo-dark">
             <span class="logo-sm">
-                <img src="{{ asset('/assets/site/img/AMID.png') }}" alt="">
+                <img src="{{ asset('/assets/images/logo/playshot.png') }}" alt="">
             </span>
             <span class="logo-lg">
-                <img src="{{ asset('/assets/site/img/AMID.png') }}" alt="">
+                <img src="{{ asset('/assets/images/logo/playshot.png') }}" alt="">
             </span>
         </a>
 
         <a href="{{url('index')}}" class="logo logo-light">
             <span class="logo-sm">
-                <img src="{{ asset('/assets/site/img/AMID.png') }}" alt="">
+                <img src="{{ asset('/assets/images/logo/playshot.png') }}" alt="">
             </span>
             <span class="logo-lg">
-                <img src="{{ asset('/assets/site/img/AMID.png') }}" alt="">
+                <img src="{{ asset('/assets/images/logo/playshot.png') }}" alt="">
             </span>
         </a>
     </div>
@@ -42,75 +42,20 @@
                         <span>@lang('translation.Dashboard')</span>
                     </a>
                 </li>
-                @can('access-student')
-                    <li>
-                        <a href="{{url('list-certifications')}}" class="waves-effect">
-                            <i class="uil uil-award icon"></i>
-                            <span>@lang('app.certifications')</span>
-                        </a>
-                    </li>
-                @endcan
                 @can('access-admin')
                     <li>
-                        <a href="{{url('certifications')}}" class="waves-effect">
+                        <a href="{{url('posts')}}" class="waves-effect">
                             <i class="uil-award"></i>
-                            <span>@lang('app.certifications')</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{url('modules')}}" class="waves-effect">
-                            <i class="uil-books"></i>
-                            <span>@lang('app.modules')</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{url('disciplines')}}" class="waves-effect">
-                            <i class="fas fa-graduation-cap icon"></i>
-                            <span>@lang('app.disciplines')</span>
+                            <span>Events</span>
                         </a>
                     </li>
 
-                    <li>
-                        <a href="{{url(path: 'teachers')}}" class="waves-effect">
-                            <i class="dripicons-user"></i>
-                            <span>@lang('app.teachers')</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{url('students')}}" class="waves-effect">
-                            <i class="dripicons-graduation"></i>
-                            <span>@lang('app.students')</span>
-                        </a>
-                    </li>
 
-                    <li>
-                        <a href="{{url('access')}}" class="waves-effect">
-                            <i class="uil-chat-bubble-user"></i>
-                            <span>@lang('app.users')</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{url('payments')}}" class="waves-effect">
-                            <i class="uil-money-bill"></i>
-                            <span>Payments</span>
-                        </a>
-                    </li>
+
                 @endcan
                 <li class="menu-title">@lang('translation.Apps')</li>
-                @can('access-student')
-                    <li>
-                        <a href="{{url('mycertifications')}}" class="waves-effect">
-                            <i class="fas fa-user-graduate"></i>
-                            <span>@lang('app.my_certifications')</span>
-                        </a>
-                    </li>
-                @endcan
-                <li>
-                    <a href="{{url('index')}}" class=" waves-effect">
-                        <i class="uil-microphone"></i>
-                        <span>@lang('app.announcement')</span>
-                    </a>
-                </li>
+
+
                 <!--
                 <li>
                     <a href="calendar" class="waves-effect">

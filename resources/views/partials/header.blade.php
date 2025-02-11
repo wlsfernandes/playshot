@@ -3,8 +3,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>#somosAETH</title>
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>#somosPlayShot</title>
+    <link rel="icon" href="assets/images/logo/playshot_favicon.png" type="image/x-icon">
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
@@ -43,7 +43,7 @@
         <div id="search-popup" class="search-popup">
             <div class="popup-inner">
                 <div class="upper-box clearfix">
-                    <figure class="logo-box pull-left"><a href=""><img src="assets/images/aeth-logo.png" alt=""></a>
+                    <figure class="logo-box pull-left"><a href=""><img src="assets/images/logo/playshot.png" alt=""></a>
                     </figure>
                     <div class="close-search pull-right"><span class="far fa-times"></span></div>
                 </div>
@@ -129,7 +129,7 @@
             <div class="header-lower">
                 <div class="outer-box">
                     <div class="logo-box">
-                        <figure class="logo"> <a href="{{ url('/') }}"><img src="assets/images/aeth-logo.png"
+                        <figure class="logo"> <a href="{{ url('/') }}"><img src="assets/images/logo/playshot.png"
                                     alt=""></a>
                         </figure>
                     </div>
@@ -168,7 +168,7 @@
 
 
                                     <li>
-                                        <a href="{{ route('memberships') }}"><i class="bi bi-person"></i>
+                                        <a href="/register"><i class="bi bi-person"></i>
                                             @lang('header.register')</a>
                                     </li>
 
@@ -185,7 +185,7 @@
                             <a href="#"><i class="icon-23"></i></a>
                         </li>
 
-                        <a href="#" class="btn btn-primary" style="
+                        <a href="/login" class="btn btn-primary" style="
         background: linear-gradient(to right, #ff6700, #ff3d00, #1a1a1a);
         border-color: #ff3d00;
         color: #fff;
@@ -214,7 +214,7 @@
                 <div class="outer-container">
                     <div class="outer-box">
                         <div class="logo-box">
-                            <figure class="logo"><a href=""><img src="assets/images/aeth-logo.png" alt=""></a>
+                            <figure class="logo"><a href=""><img src="assets/images/logo/playshot.png" alt=""></a>
                             </figure>
                         </div>
                         <div class="menu-area clearfix">
@@ -240,7 +240,7 @@
             <div class="close-btn"><i class="fas fa-times"></i></div>
 
             <nav class="menu-box">
-                <div class="nav-logo"><a href=""><img src="assets/images/aeth-logo.png" alt="" title=""></a>
+                <div class="nav-logo"><a href=""><img src="assets/images/logo/playshot.png" alt="" title=""></a>
                 </div>
                 <div class="menu-outer">
                     <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
